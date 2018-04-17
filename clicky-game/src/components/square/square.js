@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './square.css';
-import Image from './images/Ariel.jpg';
 
 class Square extends Component {
     state = {
@@ -10,9 +9,9 @@ class Square extends Component {
     _handleClick = () => {
         console.log('CLICKED');
         this.setState({clicked: 'yes'});
-    } // confused about how this works
+    } 
 
-    render() {
+    render(props) {
         return (
             <div onClick = {this._handleClick} className = 'square'>
                 <img alt = {this.props.name} src = {this.props.image}/>
