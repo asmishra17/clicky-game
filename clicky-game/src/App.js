@@ -8,6 +8,18 @@ class App extends Component {
     princess: princess
   }
 
+  score = 0;
+  highScore = 0;
+
+
+  _nextRound = () => {
+    return princess.reverse();
+  }
+
+  _playGame = () => {
+
+  }
+
   render() {
     return (
       <div className="App">
